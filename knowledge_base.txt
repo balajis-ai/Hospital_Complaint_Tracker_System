@@ -1,0 +1,604 @@
+HOSPITAL OPERATIONS & PATIENT EXPERIENCE
+RAG KNOWLEDGE BASE
+Version 1.0
+
+PURPOSE
+This knowledge base supports an AI hospital customer-support system.
+It provides reference information for identifying, understanding, categorizing,
+and responding to patient and attendant complaints related to hospital
+operations, facilities, staff, communication, treatment delays, food,
+billing, counseling, housekeeping, transportation, and patient experience.
+
+The AI must use this knowledge base as its primary reference.
+The AI must not invent hospital policies, timelines, charges, clinical decisions,
+or commitments that are not present in the knowledge base.
+
+==================================================
+1. CANTEEN / FOOD COMPLAINTS
+==================================================
+
+Common complaints:
+- Special dietary requirements were not followed.
+- Food does not match the patient's prescribed diet.
+- Wrong food was delivered.
+- Food quality is poor.
+- Food is served cold.
+- Food is not served on time.
+- Food is delayed.
+- Food quantity is insufficient.
+- Attendant food is unavailable or delayed.
+- Patient or attendant is unhappy with the taste or quality.
+- Food tray is not collected on time.
+
+Possible complaint category:
+FOOD / CANTEEN
+
+Expected handling:
+1. Acknowledge the patient's concern.
+2. Verify the patient's location/room and meal requirement.
+3. Check whether the complaint is related to food quality, timing,
+   quantity, delivery, or diet compliance.
+4. Coordinate with the Dietitian/Canteen/Food Services team as applicable.
+5. Record the complaint and action taken.
+6. Escalate if the issue remains unresolved.
+
+The AI must not provide medical dietary advice.
+Diet-related clinical decisions should be referred to the Dietitian/clinical team.
+
+
+==================================================
+2. DIETITIAN COMPLAINTS
+==================================================
+
+Common complaints:
+- Dietitian consultation was delayed.
+- Dietitian did not visit the patient.
+- Patient did not receive diet counseling.
+- Diet provided does not appear to match the communicated diet plan.
+- Patient/attendant did not understand the prescribed diet.
+- Diet-related concerns were not addressed.
+- Communication regarding diet was inadequate.
+
+Possible complaint category:
+DIETITIAN / NUTRITION
+
+Expected handling:
+- Acknowledge the concern.
+- Verify whether Dietitian consultation/counseling was requested.
+- Coordinate with the Dietitian team.
+- Avoid giving independent clinical nutrition advice.
+- Escalate clinical dietary questions to the appropriate clinical team.
+
+
+==================================================
+3. REFERRAL / SPECIALIST CONSULTATION COMPLAINTS
+==================================================
+
+Common complaints:
+- Specialist referral was delayed.
+- Referral was not communicated to the patient.
+- Patient was waiting for a specialist consultation.
+- Referral request was not followed up.
+- Patient/attendant was not informed about the consultation status.
+- Multiple departments were involved and communication was delayed.
+
+Possible complaint category:
+REFERRAL / CONSULTATION
+
+Expected handling:
+1. Verify the requested specialty/department.
+2. Check whether the referral/request has been initiated.
+3. Coordinate with the concerned department.
+4. Communicate the current status to the patient/attendant.
+5. Escalate if there is an unreasonable operational delay.
+
+The AI must not provide specialist medical opinions or clinical diagnoses.
+
+
+==================================================
+4. FACILITY COMPLAINTS
+==================================================
+
+Common complaints:
+- Room facility is not satisfactory.
+- Television is not working.
+- Air conditioner is not working.
+- Bathroom facility issue.
+- Water supply issue.
+- Lighting problem.
+- Bedside equipment/facility issue.
+- Admission kit is missing.
+- Required room amenities are unavailable.
+- Room maintenance is delayed.
+
+Possible complaint category:
+FACILITY / ROOM
+
+Expected handling:
+- Acknowledge the complaint.
+- Identify the room/bed and specific facility issue.
+- Coordinate with Engineering/Maintenance/Housekeeping/concerned department.
+- Track the issue until closure.
+- Update the patient/attendant regarding the status.
+
+Examples:
+
+Television not working:
+→ Facility complaint
+→ Coordinate with Engineering/Maintenance
+→ Track resolution
+→ Inform patient
+
+AC not working:
+→ Facility complaint
+→ Coordinate with Engineering/Maintenance
+→ Escalate if unresolved
+→ Communicate status
+
+Bathroom issue:
+→ Facility/Housekeeping complaint
+→ Coordinate with Housekeeping/Maintenance
+→ Confirm resolution
+
+
+==================================================
+5. STAFF BEHAVIOR COMPLAINTS
+==================================================
+
+Common complaints:
+- Staff communication was rude.
+- Staff did not respond appropriately.
+- Patient felt staff were not attentive.
+- Staff did not explain the process properly.
+- Patient/attendant felt ignored.
+- Staff communication was unclear.
+- Staff did not provide an appropriate update.
+
+Possible complaint category:
+STAFF BEHAVIOR / SERVICE EXPERIENCE
+
+Expected handling:
+1. Listen to and acknowledge the concern.
+2. Avoid blaming the staff member before investigation.
+3. Record the complaint accurately.
+4. Identify the concerned department/team if available.
+5. Escalate to the appropriate supervisor/department head.
+6. Follow up with the patient/attendant where appropriate.
+
+The AI must maintain a professional and neutral tone.
+
+
+==================================================
+6. TREATMENT / SERVICE DELAY COMPLAINTS
+==================================================
+
+Common complaints:
+- Treatment was delayed.
+- Procedure was delayed.
+- Investigation was delayed.
+- Doctor consultation was delayed.
+- Medication was delayed.
+- Test/report was delayed.
+- Patient was waiting for a service.
+- Patient did not receive an update about the delay.
+
+Possible complaint category:
+SERVICE DELAY
+
+Expected handling:
+- Identify the delayed service.
+- Determine the responsible operational department.
+- Check current status.
+- Coordinate with the concerned department.
+- Provide the patient with a status update.
+- Escalate when necessary.
+
+The AI must not promise an exact treatment completion time unless
+a confirmed time is available from the hospital team.
+
+
+==================================================
+7. FOOD DELIVERY DELAY
+==================================================
+
+Common complaints:
+- Breakfast/lunch/dinner was not delivered on time.
+- Patient received food late.
+- Diet tray was delayed.
+- Food order was not communicated correctly.
+
+Possible complaint category:
+FOOD DELAY
+
+Expected handling:
+- Verify patient room/bed.
+- Verify meal type.
+- Coordinate with Food Services/Canteen/Dietitian as applicable.
+- Check current delivery status.
+- Provide an update to the patient.
+
+
+==================================================
+8. CUSTOMER SUPPORT / COMMUNICATION DELAY
+==================================================
+
+Common complaints:
+- Patient called customer support but did not receive a response.
+- Patient waited too long for an update.
+- Information was not communicated properly.
+- Different departments provided different information.
+- Patient did not know the status of a request.
+- Follow-up was not done.
+
+Possible complaint category:
+CUSTOMER SUPPORT / COMMUNICATION
+
+Expected handling:
+1. Acknowledge the communication gap.
+2. Identify the pending request.
+3. Contact the appropriate department.
+4. Obtain the latest status.
+5. Communicate the status clearly.
+6. Record the follow-up.
+
+
+==================================================
+9. PATIENT TRANSPORTATION DELAY
+==================================================
+
+Common complaints:
+- Patient transport to scan room was delayed.
+- Patient waited for wheelchair/stretcher.
+- Transport request was not attended on time.
+- Patient reached Radiology/scan area late.
+- Patient was waiting for internal transportation.
+
+Possible complaint category:
+PATIENT TRANSPORT / INTERNAL MOVEMENT
+
+Expected handling:
+- Verify patient location.
+- Verify destination department.
+- Check whether transport was requested.
+- Coordinate with Patient Transport/concerned department.
+- Update the patient/attendant.
+- Escalate repeated or significant delays.
+
+Example:
+Patient waiting to go to CT/MRI/Ultrasound:
+→ Verify transport request
+→ Contact Patient Transport
+→ Check scan appointment/status
+→ Coordinate movement
+→ Update patient
+
+
+==================================================
+10. HOUSEKEEPING / CLEANING COMPLAINTS
+==================================================
+
+Common complaints:
+- Room cleaning was delayed.
+- Bathroom cleaning was delayed.
+- Room was not cleaned properly.
+- Waste was not removed.
+- Housekeeping request was not attended.
+- Cleaning frequency was inadequate.
+- Patient had to repeatedly request cleaning.
+
+Possible complaint category:
+HOUSEKEEPING / CLEANLINESS
+
+Expected handling:
+- Identify room/area.
+- Record the exact cleaning requirement.
+- Contact Housekeeping.
+- Request immediate attention where appropriate.
+- Verify completion.
+- Update patient/attendant.
+
+
+==================================================
+11. MEDICAL COUNSELING DELAY
+==================================================
+
+Common complaints:
+- Medical counseling was not done on time.
+- Doctor/clinical team did not explain the treatment plan.
+- Patient/attendant was waiting for an explanation.
+- Procedure-related counseling was delayed.
+- Discharge counseling was delayed.
+
+Possible complaint category:
+MEDICAL COUNSELING / CLINICAL COMMUNICATION
+
+Expected handling:
+- Acknowledge the concern.
+- Identify the required counseling.
+- Coordinate with the responsible doctor/clinical team.
+- Escalate if counseling is urgently required.
+- Do not provide clinical advice independently.
+
+The AI must never replace a doctor or clinical professional.
+
+
+==================================================
+12. PAYMENT / FINANCIAL COUNSELING
+==================================================
+
+Common complaints:
+- Payment counseling was not done.
+- Patient was not informed about expected expenses.
+- Patient/attendant is unclear about the bill.
+- Patient was not informed about changes in the estimated amount.
+- Additional charges were noticed unexpectedly.
+- Patient is concerned about an increase in the bill amount.
+
+Possible complaint category:
+PAYMENT / BILLING / FINANCIAL COUNSELING
+
+Expected handling:
+1. Acknowledge the concern.
+2. Verify the billing/payment-related request.
+3. Coordinate with Billing/Finance/Patient Counseling.
+4. Explain only confirmed information.
+5. If the amount needs verification, escalate to the Billing/Finance team.
+6. Do not invent or estimate charges.
+
+
+==================================================
+13. INCREASE IN BILL / AMOUNT
+==================================================
+
+Common complaints:
+- Bill amount increased compared with the initial estimate.
+- Patient was not informed about additional charges.
+- Patient wants an explanation for increased billing.
+- Patient disputes a particular charge.
+- Patient wants clarification regarding package/room/service charges.
+
+Possible complaint category:
+BILLING DISCREPANCY / COST CLARIFICATION
+
+Expected handling:
+- Acknowledge the concern.
+- Identify the disputed charge or increase.
+- Request/verify the relevant bill details.
+- Coordinate with Billing/Finance.
+- Provide only verified information.
+- Escalate billing disputes to the appropriate authority.
+
+The AI must never invent a reason for an increased bill.
+
+
+==================================================
+14. ADMISSION KIT COMPLAINT
+==================================================
+
+Common complaints:
+- Admission kit was not provided.
+- Admission kit was delayed.
+- Some items were missing from the admission kit.
+- Patient did not receive information regarding the kit.
+
+Possible complaint category:
+ADMISSION / PATIENT AMENITIES
+
+Expected handling:
+- Verify admission details.
+- Check kit availability.
+- Coordinate with the responsible department.
+- Arrange the required items.
+- Confirm closure with the patient.
+
+
+==================================================
+15. ROOM AMENITY COMPLAINTS
+==================================================
+
+Common complaints:
+- TV not working.
+- AC not working.
+- Bathroom issue.
+- Bedside facility issue.
+- Room cleanliness issue.
+- Room maintenance issue.
+- Missing room amenities.
+- Admission kit not provided.
+
+Possible complaint category:
+ROOM AMENITIES
+
+The system should classify the complaint according to the specific
+facility involved and route it to the appropriate operational team.
+
+
+==================================================
+16. DELAY IN COMMUNICATION
+==================================================
+
+Common complaints:
+- Patient was not informed about a delay.
+- Test/procedure schedule was changed without proper communication.
+- Patient did not receive an update.
+- Family member was not informed.
+- Department-to-department communication failed.
+
+Possible complaint category:
+COMMUNICATION GAP
+
+Expected handling:
+- Identify what information was missing.
+- Identify the department responsible for the update.
+- Obtain the latest confirmed information.
+- Communicate clearly and politely.
+- Record the communication/follow-up.
+
+
+==================================================
+17. GENERAL PATIENT COMPLAINT HANDLING
+==================================================
+
+Every complaint should be handled using the following approach:
+
+1. IDENTIFY
+Determine what the patient is complaining about.
+
+2. CATEGORIZE
+Assign the complaint to the appropriate category:
+- Food/Canteen
+- Dietitian
+- Referral
+- Facility
+- Staff Behavior
+- Treatment Delay
+- Food Delay
+- Customer Support
+- Transportation
+- Housekeeping
+- Medical Counseling
+- Payment Counseling
+- Billing
+- Admission Kit
+- Room Amenities
+- Communication Gap
+
+3. VERIFY
+Check the available information before providing an answer.
+
+4. COORDINATE
+Identify the appropriate department/team responsible for resolution.
+
+5. UPDATE
+Provide the patient/attendant with the latest confirmed status.
+
+6. ESCALATE
+Escalate when the issue cannot be resolved using available information.
+
+7. CLOSE
+Record the action taken and confirm resolution when possible.
+
+
+==================================================
+18. AI RESPONSE RULES
+==================================================
+
+The AI should:
+
+- Be polite and professional.
+- Show empathy toward the patient/attendant.
+- Keep responses concise.
+- Personalize the response using available patient/email information.
+- Never blame staff or departments without verified information.
+- Never invent hospital policies.
+- Never invent charges.
+- Never provide medical diagnosis or treatment advice.
+- Never promise an unconfirmed resolution time.
+- Use the knowledge base as the first source.
+- Use memory/history when available.
+- Assign a confidence score to every generated answer.
+- If confidence is below the required threshold, send the query for
+  validation/web research.
+- Clearly distinguish verified information from assumptions.
+- Escalate clinical, financial, safety, or unresolved complaints
+  to the appropriate hospital team.
+
+
+==================================================
+19. CONFIDENCE SCORING
+==================================================
+
+Confidence should be based on how clearly the available knowledge supports
+the answer.
+
+90-100%:
+Information directly matches the knowledge base and the answer is clear.
+
+70-89%:
+Information is mostly supported but some clarification may be required.
+
+Below 70%:
+Knowledge base does not provide sufficient information.
+The answer should not be treated as reliable without additional validation.
+
+The system should use:
+
+CONFIDENCE >= 70%
+→ Send to Validation Agent
+
+CONFIDENCE < 70%
+→ Perform external/web validation
+→ Re-evaluate confidence
+→ Retry/refine if necessary
+
+
+==================================================
+20. EXAMPLE COMPLAINTS
+==================================================
+
+Example 1:
+"My mother's food has not come yet."
+
+Category:
+FOOD DELAY
+
+Action:
+Check with Food Services/Dietitian and provide the latest status.
+
+Example 2:
+"The AC in my room is not working."
+
+Category:
+FACILITY / ROOM AMENITY
+
+Action:
+Coordinate with Engineering/Maintenance and track resolution.
+
+Example 3:
+"We have been waiting for the wheelchair for a long time."
+
+Category:
+PATIENT TRANSPORT DELAY
+
+Action:
+Coordinate with Patient Transport and provide an update.
+
+Example 4:
+"The doctor has not explained the procedure yet."
+
+Category:
+MEDICAL COUNSELING
+
+Action:
+Coordinate with the clinical team. Do not provide medical advice.
+
+Example 5:
+"Why has my bill increased?"
+
+Category:
+BILLING / PAYMENT COUNSELING
+
+Action:
+Verify bill details and coordinate with Billing/Finance.
+
+Example 6:
+"My room has not been cleaned."
+
+Category:
+HOUSEKEEPING
+
+Action:
+Coordinate with Housekeeping and confirm completion.
+
+Example 7:
+"I asked for a specialist consultation but nobody has updated me."
+
+Category:
+REFERRAL / COMMUNICATION DELAY
+
+Action:
+Check referral status and coordinate with the concerned department.
+
+==================================================
+END OF KNOWLEDGE BASE
+==================================================
